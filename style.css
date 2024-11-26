@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Input Field Styles */
+input {
+    height: 40px;
+    font-size: 1.6rem; /* Reduced font size for better readability */
+    width: 70%;
+    padding: 0 10px; /* Adjusted padding for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add Button Styles */
+button.add {
+    width: 30%;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    flex-direction: column; /* Changed to column for better mobile responsiveness */
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+/* Item Styles */
+.item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Clicked Item Styles */
+.item.clicado {
+    background-color: #d4f6d9;
+}
+
+/* Clicked Item Name Styles */
+.item.clicado .item-nome {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Item Icon Styles */
+.item-icone {
+    flex: 1;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Item Name Styles */
+.item-nome {
+    flex: 3;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Item Button Styles */
+.item-botao {
+    flex: 1;
+    text-align: right;
+}
+
+/* Delete Button Styles */
+.delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Checkmark Icon Styles */
+.mdi-check-circle {
+    color: green;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    height: 40px;
+    width: 100%;
+}
+
+/* Footer Link Styles */
+footer a {
+    color: white;
+}
+
+/* Footer Icon Styles */
+footer i {
+    color: red;
+    font-size: 22px;
+    & p {
+        color: #fff;
+    }
+}
